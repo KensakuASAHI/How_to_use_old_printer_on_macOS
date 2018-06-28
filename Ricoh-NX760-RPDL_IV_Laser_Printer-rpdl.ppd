@@ -1,0 +1,266 @@
+*PPD-Adobe: "4.3"
+*%
+*% For information on using this, and to obtain the required backend
+*% script, consult http://www.openprinting.org/
+*%
+*% This file is published under the GNU General Public License
+*%
+*% PPD-O-MATIC (4.0.0 or newer) generated this PPD file. It is for use with 
+*% all programs and environments which use PPD files for dealing with
+*% printer capability information. The printer must be configured with the
+*% "foomatic-rip" backend filter script of Foomatic 4.0.0 or newer. This 
+*% file and "foomatic-rip" work together to support PPD-controlled printer
+*% driver option access with all supported printer drivers and printing
+*% spoolers.
+*%
+*% To save this file on your disk, wait until the download has completed
+*% (the animation of the browser logo must stop) and then use the
+*% "Save as..." command in the "File" menu of your browser or in the 
+*% pop-up manu when you click on this document with the right mouse button.
+*% DO NOT cut and paste this file into an editor with your mouse. This can
+*% introduce additional line breaks which lead to unexpected results.
+*%
+*% You may save this file as 'Ricoh-RPDL_IV_Laser_Printer-rpdl.ppd'
+*%
+*%
+*FormatVersion:	"4.3"
+*FileVersion:	"1.1"
+*LanguageVersion: English 
+*LanguageEncoding: ISOLatin1
+*PCFileName:	"RPDL.PPD"
+*Manufacturer:	"Ricoh"
+*Product:	"(RPDL IV Laser Printer)"
+*cupsVersion:	1.0
+*cupsManualCopies: True
+*cupsModelNumber:  2
+*cupsFilter:	"application/vnd.cups-postscript 0 foomatic-rip"
+*%cupsFilter:	"application/vnd.cups-pdf 100 foomatic-rip"
+*%pprRIP:        foomatic-rip other
+*ModelName:     "Ricoh RPDL IV Laser Printer"
+*ShortNickName: "Ricoh RP. IV Laser Printer rpdl"
+*NickName:      "Ricoh RPDL IV Laser Printer Foomatic/rpdl (recommended)"
+*PSVersion:	"(3010.000) 550"
+*PSVersion:	"(3010.000) 651"
+*PSVersion:	"(3010.000) 652"
+*PSVersion:	"(3010.000) 653"
+*PSVersion:	"(3010.000) 704"
+*PSVersion:	"(3010.000) 705"
+*PSVersion:	"(3010.000) 800"
+*PSVersion:	"(3010.000) 815"
+*PSVersion:	"(3010.000) 850"
+*PSVersion:	"(3010.000) 860"
+*PSVersion:	"(3010.000) 861"
+*PSVersion:	"(3010.000) 862"
+*PSVersion:	"(3010.000) 863"
+*PSVersion:	"(3010.000) 864"
+*PSVersion:	"(3010.000) 870"
+*LanguageLevel:	"3"
+*ColorDevice:	False
+*DefaultColorSpace: Gray
+*FileSystem:	False
+*Throughput:	"1"
+*LandscapeOrientation: Plus90
+*TTRasterizer:	Type42
+*1284DeviceID: "DRV:Drpdl,R1,M0,F1,P0,TG;"
+
+*driverName rpdl: ""
+*driverType G/Ghostscript built-in: ""
+*driverUrl: "http://www.openprinting.org/download/japanese_printers/"
+*driverObsolete: False
+*driverManufacturerSupplied: False
+*driverFreeSoftware: True
+
+
+
+
+*HWMargins: 18 36 18 36
+*VariablePaperSize: True
+*MaxMediaWidth: 100000
+*MaxMediaHeight: 100000
+*NonUIOrderDependency: 100 AnySetup *CustomPageSize
+*CustomPageSize True: "pop pop pop pop pop
+%% FoomaticRIPOptionSetting: PageSize=Custom"
+*End
+*FoomaticRIPOptionSetting PageSize=Custom: " -dDEVICEWIDTHPOINTS=0 -dD&&
+EVICEHEIGHTPOINTS=0"
+*End
+*ParamCustomPageSize Width: 1 points 36 100000
+*ParamCustomPageSize Height: 2 points 36 100000
+*ParamCustomPageSize Orientation: 3 int 0 0
+*ParamCustomPageSize WidthOffset: 4 points 0 0
+*ParamCustomPageSize HeightOffset: 5 points 0 0
+
+*FoomaticIDs: Ricoh-RPDL_IV_Laser_Printer rpdl
+*FoomaticRIPCommandLine: "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPA&&
+USE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=rpdl -sOutputFile=- -"
+*End
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*FoomaticRIPOption PageSize: enum CmdLine A
+*OrderDependency: 100 AnySetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter/Letter: "%% FoomaticRIPOptionSetting: PageSize=Letter"
+*FoomaticRIPOptionSetting PageSize=Letter: " -dDEVICEWIDTHPOINTS=612 -&&
+dDEVICEHEIGHTPOINTS=792"
+*End
+*PageSize A4/A4: "%% FoomaticRIPOptionSetting: PageSize=A4"
+*FoomaticRIPOptionSetting PageSize=A4: " -dDEVICEWIDTHPOINTS=595 -dDEV&&
+ICEHEIGHTPOINTS=842"
+*End
+*PageSize A3/A3: "%% FoomaticRIPOptionSetting: PageSize=A3"
+*FoomaticRIPOptionSetting PageSize=A3: " -dDEVICEWIDTHPOINTS=842 -dDEV&&
+ICEHEIGHTPOINTS=1190"
+*End
+*PageSize A5/A5: "%% FoomaticRIPOptionSetting: PageSize=A5"
+*FoomaticRIPOptionSetting PageSize=A5: " -dDEVICEWIDTHPOINTS=421 -dDEV&&
+ICEHEIGHTPOINTS=595"
+*End
+*PageSize B4JIS/B4 (JIS): "%% FoomaticRIPOptionSetting: PageSize=B4JIS"
+*FoomaticRIPOptionSetting PageSize=B4JIS: " -dDEVICEWIDTHPOINTS=729 -d&&
+DEVICEHEIGHTPOINTS=1032"
+*End
+*PageSize B5JIS/B5 (JIS): "%% FoomaticRIPOptionSetting: PageSize=B5JIS"
+*FoomaticRIPOptionSetting PageSize=B5JIS: " -dDEVICEWIDTHPOINTS=516 -d&&
+DEVICEHEIGHTPOINTS=729"
+*End
+*PageSize B6JIS/B6 (JIS): "%% FoomaticRIPOptionSetting: PageSize=B6JIS"
+*FoomaticRIPOptionSetting PageSize=B6JIS: " -dDEVICEWIDTHPOINTS=363 -d&&
+DEVICEHEIGHTPOINTS=516"
+*End
+*PageSize EnvYou4/Envelope You 4: "%% FoomaticRIPOptionSetting: PageSize=EnvYou4"
+*FoomaticRIPOptionSetting PageSize=EnvYou4: " -dDEVICEWIDTHPOINTS=298 &&
+-dDEVICEHEIGHTPOINTS=666"
+*End
+*PageSize Executive/Executive: "%% FoomaticRIPOptionSetting: PageSize=Executive"
+*FoomaticRIPOptionSetting PageSize=Executive: " -dDEVICEWIDTHPOINTS=52&&
+2 -dDEVICEHEIGHTPOINTS=756"
+*End
+*PageSize Hagaki/Hagaki: "%% FoomaticRIPOptionSetting: PageSize=Hagaki"
+*FoomaticRIPOptionSetting PageSize=Hagaki: " -dDEVICEWIDTHPOINTS=283 -&&
+dDEVICEHEIGHTPOINTS=420"
+*End
+*PageSize Ledger/Ledger: "%% FoomaticRIPOptionSetting: PageSize=Ledger"
+*FoomaticRIPOptionSetting PageSize=Ledger: " -dDEVICEWIDTHPOINTS=792 -&&
+dDEVICEHEIGHTPOINTS=1224"
+*End
+*PageSize Legal/Legal: "%% FoomaticRIPOptionSetting: PageSize=Legal"
+*FoomaticRIPOptionSetting PageSize=Legal: " -dDEVICEWIDTHPOINTS=612 -d&&
+DEVICEHEIGHTPOINTS=1008"
+*End
+*PageSize Oufuku/Oufuku: "%% FoomaticRIPOptionSetting: PageSize=Oufuku"
+*FoomaticRIPOptionSetting PageSize=Oufuku: " -dDEVICEWIDTHPOINTS=420 -&&
+dDEVICEHEIGHTPOINTS=567"
+*End
+*PageSize Postcard/Postcard: "%% FoomaticRIPOptionSetting: PageSize=Postcard"
+*FoomaticRIPOptionSetting PageSize=Postcard: " -dDEVICEWIDTHPOINTS=284&&
+ -dDEVICEHEIGHTPOINTS=419"
+*End
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 100 AnySetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter/Letter: "%% FoomaticRIPOptionSetting: PageSize=Letter"
+*PageRegion A4/A4: "%% FoomaticRIPOptionSetting: PageSize=A4"
+*PageRegion A3/A3: "%% FoomaticRIPOptionSetting: PageSize=A3"
+*PageRegion A5/A5: "%% FoomaticRIPOptionSetting: PageSize=A5"
+*PageRegion B4JIS/B4 (JIS): "%% FoomaticRIPOptionSetting: PageSize=B4JIS"
+*PageRegion B5JIS/B5 (JIS): "%% FoomaticRIPOptionSetting: PageSize=B5JIS"
+*PageRegion B6JIS/B6 (JIS): "%% FoomaticRIPOptionSetting: PageSize=B6JIS"
+*PageRegion EnvYou4/Envelope You 4: "%% FoomaticRIPOptionSetting: PageSize=EnvYou4"
+*PageRegion Executive/Executive: "%% FoomaticRIPOptionSetting: PageSize=Executive"
+*PageRegion Hagaki/Hagaki: "%% FoomaticRIPOptionSetting: PageSize=Hagaki"
+*PageRegion Ledger/Ledger: "%% FoomaticRIPOptionSetting: PageSize=Ledger"
+*PageRegion Legal/Legal: "%% FoomaticRIPOptionSetting: PageSize=Legal"
+*PageRegion Oufuku/Oufuku: "%% FoomaticRIPOptionSetting: PageSize=Oufuku"
+*PageRegion Postcard/Postcard: "%% FoomaticRIPOptionSetting: PageSize=Postcard"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: Letter
+*ImageableArea Letter/Letter: "18 36 594 756"
+*ImageableArea A4/A4: "18 36 577 806"
+*ImageableArea A3/A3: "18 36 824 1154"
+*ImageableArea A5/A5: "18 36 403 559"
+*ImageableArea B4JIS/B4 (JIS): "18 36 711 996"
+*ImageableArea B5JIS/B5 (JIS): "18 36 498 693"
+*ImageableArea B6JIS/B6 (JIS): "18 36 345 480"
+*ImageableArea EnvYou4/Envelope You 4: "18 36 280 630"
+*ImageableArea Executive/Executive: "18 36 504 720"
+*ImageableArea Hagaki/Hagaki: "18 36 265 384"
+*ImageableArea Ledger/Ledger: "18 36 774 1188"
+*ImageableArea Legal/Legal: "18 36 594 972"
+*ImageableArea Oufuku/Oufuku: "18 36 402 531"
+*ImageableArea Postcard/Postcard: "18 36 266 383"
+
+*DefaultPaperDimension: Letter
+*PaperDimension Letter/Letter: "612 792"
+*PaperDimension A4/A4: "595 842"
+*PaperDimension A3/A3: "842 1190"
+*PaperDimension A5/A5: "421 595"
+*PaperDimension B4JIS/B4 (JIS): "729 1032"
+*PaperDimension B5JIS/B5 (JIS): "516 729"
+*PaperDimension B6JIS/B6 (JIS): "363 516"
+*PaperDimension EnvYou4/Envelope You 4: "298 666"
+*PaperDimension Executive/Executive: "522 756"
+*PaperDimension Hagaki/Hagaki: "283 420"
+*PaperDimension Ledger/Ledger: "792 1224"
+*PaperDimension Legal/Legal: "612 1008"
+*PaperDimension Oufuku/Oufuku: "420 567"
+*PaperDimension Postcard/Postcard: "284 419"
+
+*OpenUI *Resolution/Resolution: PickOne
+*FoomaticRIPOption Resolution: enum CmdLine A
+*OrderDependency: 110 AnySetup *Resolution
+*DefaultResolution: 400x400dpi
+*Resolution 240x240dpi/240x240 DPI: "%% FoomaticRIPOptionSetting: Resolution=240x240dpi"
+*FoomaticRIPOptionSetting Resolution=240x240dpi: " -r240x240"
+*Resolution 400x400dpi/400x400 DPI: "%% FoomaticRIPOptionSetting: Resolution=400x400dpi"
+*FoomaticRIPOptionSetting Resolution=400x400dpi: " -r400x400"
+*Resolution 600x600dpi/600x600 DPI: "%% FoomaticRIPOptionSetting: Resolution=600x600dpi"
+*FoomaticRIPOptionSetting Resolution=600x600dpi: " -r600x600"
+*CloseUI: *Resolution
+
+*CloseGroup: General
+
+
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+
